@@ -10,9 +10,16 @@ jobs:
   build:
     runs-on: windows-latest
     permissions:
-      contents: write
-      pull-requests: write
       actions: write
+      checks: write
+      contents: write
+      deployments: write
+      issues: write
+      packages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
